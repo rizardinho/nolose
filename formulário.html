@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Formulário: cadastro de Professor</h1>
+		<form>
+
+			<fieldset>
+				<legend align="center">Dados Pessoais </legend>
+
+			<label for="nome">Nome:</label><br>
+			<input type="text" size="50" id="nome" name="nome" maxlength="10" required minlength="2" placeholder="Digite seu nome">
+			<br><br>
+
+		
+        <label for="telefone">Telefone:<br></label>
+		<input type="tel" size="20" id="telefone" name="telefone" maxlength="15" required placeholder="Digite seu telefone">
+
+		<br><br>
+
+		<label for="e-mail">E-mail:</label><br>
+		<input type="email" name="email" id="email" required placeholder="digite seu e-mail" size="35">
+
+		<br><br>
+
+		<label for="foto">Foto:<br></label>
+		<input type="file" name="foto" id="foto" accept=".jpg,.png,.jpeg">
+
+		<br><br>
+
+		<label for="datadenascimento">Data Nascimento</label>
+		<input type="date"name="datadenascimento" id="datadenascimento">
+
+				<br><br>
+
+		<label for="idade">Idade:<br><br></label>
+		<input type="number" id="idade"name="idade" min="21" max="65"> <!-- step="2", serve pra designar de quanto em quanto pulara -->
+
+		<br><br> 
+
+		<label for="senha">Senha</label>
+		<input type="password" id="senha" name="senha" minlength="8" maxlength="12" required size="12">
+
+		<br><br>
+
+        <label for="sexo">Sexo</label><br>
+        
+        Masculino<input type="radio" name="sexo" id="sexo" value="M" checked><br>
+        Feminino<input type="radio" name="sexo" id="sexo" value="F"><br>
+        Diferenciado<input type="radio" name="sexo" id="sexo" value="Outro"><br>
+        
+
+        <br><br> 
+
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+    <legend	align="center"><b>Dados Profissionais</b></legend>
+    </fieldset>
+
+    <br><br>
+ 
+		<input type="submit" value="cadastrar">
+
+
+
+
+		</form>
+
+</body>
+</html>
